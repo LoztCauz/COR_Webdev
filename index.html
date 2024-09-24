@@ -5,106 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CERTIFICATE OF REGISTRATION</title>
     <style>
-        @page {
-            size: A4;
-            margin: 0;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
         }
 
         .certificate-container {
             width: 21cm;
-            height: auto;
-            padding: 2cm;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            overflow: hidden;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         header {
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        header h1, header p {
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 14px;
+        }
+
+        .registration-info {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .registration-info h2 {
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        .registration-info span {
+            color: red;
+            font-weight: bold;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 1cm;
-            font-size: small;
+            margin-bottom: 20px;
         }
 
-        th, td {
-            padding: 5px;
-            font-size: smaller;
-        }
-
-        .header img {
-            margin-right: 0;
-            vertical-align: middle;
-        }
-
-        .header .text {
-            text-align: center;
-            padding: 0 50px;
-        }
-
-        .header .text h1 {
-            margin: 0;
-            font-size: 20px;
-        }
-
-        .header .text p {
-            margin: 5px 0;
-            font-size: 16px;
-        }
-
-        h3 {
-            font-size: 20px;
-            margin: 0;
-            letter-spacing: 10px;
-            text-align: center;
-            padding: 0;
-        }
-
-        table, td, th {
+        table th, table td {
             border: 1px solid black;
+            padding: 8px;
+            text-align: left;
         }
 
-        table thead {
+        table th {
             background-color: rgba(0, 0, 128, 0.3);
         }
 
-        .footer-note {
+        .footer {
             text-align: center;
-            font-size: 0.8em;
-            padding: 10px;
-            margin-top: 2cm;
-            border-top: 1px solid black;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .approved-by {
+            text-align: right;
+            margin-top: 40px;
+        }
+
+        .approved-by p {
+            margin: 0;
+        }
+
+        .approved-by .signature {
+            margin-top: 50px;
+            font-weight: bold;
         }
 
         @media print {
             body {
-                box-shadow: none;
-            }
-
-            .certificate-container {
                 margin: 0;
-                padding: 0;
             }
-
-            table, td, th {
-                page-break-inside: avoid;
+            .certificate-container {
+                padding: 0;
             }
         }
     </style>
@@ -113,113 +107,108 @@
 <body>
     <div class="certificate-container">
         <header>
-            <img src="PSU_LOGO.jpg" width="100" height="100" alt="Palawan State University Logo">
-            <div class="header">
-                <div class="text">
-                    <p>Republic of the Philippines</p>
-                    <h1>Palawan State University</h1>
-                    <p>Puerto Princesa City</p>
-                </div>
-            </div>
+            <img src="PSU_LOGO.jpg" alt="Palawan State University Logo">
+            <h1>Palawan State University</h1>
+            <p>Republic of the Philippines</p>
+            <p>Puerto Princesa City</p>
         </header>
-        
-        <h3>CERTIFICATE OF REGISTRATION</h3>
-        <p>Registration No: <span style="color: red; font-weight: bold;">000366364</span></p>
+
+        <div class="registration-info">
+            <h2>CERTIFICATE OF REGISTRATION</h2>
+            <p>Registration No: <span>000366364</span></p>
+        </div>
 
         <table>
-            <thead>
-                <tr>
-                    <td colspan="3" style="text-align: center; background-color: rgba(0, 0, 128, 0.3);"><strong>STUDENT GENERAL INFORMATION</strong></td>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
-                    <td>Student No: <strong>2022-8-0008</strong></td>
-                    <td>College: <strong>College of Sciences</strong></td>
-                    <td>School Year: <strong>2024-2025 FIRST SEMESTER</strong></td>
+                    <td><strong>Student No:</strong> 2022-8-0008</td>
+                    <td><strong>College:</strong> College of Sciences</td>
+                    <td><strong>School Year:</strong> 2024-2025 First Semester</td>
                 </tr>
                 <tr>
-                    <td>Name: <strong>CHANG, FRANZ MEINARD NAMIA</strong></td>
-                    <td>Program: <strong>Bachelor of Science in Information Technology</strong></td>
-                    <td>Curriculum: <strong>08-BSIT-2019</strong></td>
+                    <td><strong>Name:</strong> CHANG, FRANZ MEINARD NAMIA</td>
+                    <td><strong>Program:</strong> BS in Information Technology</td>
+                    <td><strong>Curriculum:</strong> 08-BSIT-2019</td>
                 </tr>
                 <tr>
-                    <td>Gender: <strong>Male</strong></td>
-                    <td>Year Level: <strong>3rd Year</strong></td>
-                    <td>Age: <strong>20</strong></td>
-                </tr>
-                <!-- Schedule Details -->
-                <tr>
-                    <td colspan="3">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>CODE</th>
-                                    <th>SUBJECT TITLE</th>
-                                    <th>UNIT</th>
-                                    <th>SECTION</th>
-                                    <th>SCHEDULE/ROOM</th>
-                                    <th>FACULTY SIGNATURE</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Subject Rows Example -->
-                                <tr>
-                                    <td>IT 8/L</td>
-                                    <td>Advance Database System</td>
-                                    <td style="text-align: center;">3.0</td>
-                                    <td>BSIT3B2</td>
-                                    <td>
-                                        <p>M 07:30am - 10:30am/MTC2</p>
-                                        <p>W 07:30am - 09:30am/CL1</p>
-                                    </td>
-                                    <td><u>Lopez, Menchie L.</u></td>
-                                </tr>
-                                <!-- More rows -->
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <!-- Assessed Fees Section -->
-                <tr>
-                    <td colspan="2">
-                        <table>
-                            <tr>
-                                <td>Tuition Fee (21@200)</td>
-                                <td style="text-align: right;">4,200.00</td>
-                            </tr>
-                            <tr>
-                                <td>Misc-Library Fees</td>
-                                <td style="text-align: right;">200.00</td>
-                            </tr>
-                            <!-- More fees -->
-                            <tr>
-                                <td>Total Assessment:</td>
-                                <td style="text-align: right;">Php 8,490.00</td>
-                            </tr>
-                            <tr>
-                                <td>Total Payment:</td>
-                                <td style="text-align: right;">0.00</td>
-                            </tr>
-                            <tr>
-                                <td>Outstanding Balance:</td>
-                                <td style="text-align: right;">Php 8,490.00</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3" style="text-align: right;"><strong>APPROVED BY:</strong></td>
-                </tr>
-                <tr>
-                    <td colspan="3" style="text-align: right;"><u>CHERYLL ANNE DATOR, Ph.D.</u></td>
+                    <td><strong>Gender:</strong> Male</td>
+                    <td><strong>Age:</strong> 20</td>
+                    <td><strong>Year Level:</strong> 3rd Year</td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="footer-note">
+        <table>
+            <thead>
+                <tr>
+                    <th>CODE</th>
+                    <th>SUBJECT TITLE</th>
+                    <th>UNIT</th>
+                    <th>SECTION</th>
+                    <th>SCHEDULE/ROOM</th>
+                    <th>FACULTY SIGNATURE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IT 8/L</td>
+                    <td>Advanced Database System</td>
+                    <td>3.0</td>
+                    <td>BSIT3B2</td>
+                    <td>M 07:30am - 10:30am / MTC2</td>
+                    <td>Lopez, Menchie L.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">ASSESSED FEES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tuition Fee (21@200)</td>
+                    <td style="text-align: right;">4,200.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Assessment:</strong></td>
+                    <td style="text-align: right;"><strong>Php 8,490.00</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>1st Payment / Due Date</th>
+                    <th>2nd Payment / Due Date</th>
+                    <th>3rd Payment / Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3,390.00 / 05/12/2024</td>
+                    <td>2,720.00 / 08/25/2024</td>
+                    <td>2,780.00 / 11/29/2024</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p><strong>Official Receipt:</strong> ___________________________</p>
+            <p><strong>Payment/Validation Date:</strong> 02-Aug-2024 8:55am</p>
+        </div>
+
+        <div class="approved-by">
+            <p>Approved by:</p>
+            <p class="signature">CHERYLL ANNE DATOR, Ph.D</p>
+        </div>
+
+        <div class="footer">
             <p>Date Printed: August 08, 2024 09:17:17AM</p>
-            <p>KEEP THIS CERTIFICATE. YOU WILL BE REQUIRED TO PRESENT THIS IN ALL YOUR DEALINGS WITH THE COLLEGE.</p>
+            <p style="background-color: rgba(0, 0, 128, 0.3);">KEEP THIS CERTIFICATE. YOU WILL BE REQUIRED TO PRESENT THIS IN ALL YOUR DEALINGS WITH THE COLLEGE.</p>
         </div>
     </div>
 </body>
